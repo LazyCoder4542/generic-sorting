@@ -13,7 +13,7 @@ GenericSort/
 ├── Program.cs        # Demo
 ├── GenericSort.csproj
 GenericSort.Tests/
-└── SortingTests.cs
+└── SortingTests.cs   # Testing
 generic-sorting.sln
 
 ```
