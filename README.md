@@ -10,9 +10,11 @@ Originally tasked with building any generic sorting algorithm, I went further to
 ```
 GenericSort/
 ├── Sorting.cs        # All sorting algorithm implementations
-├── Program.cs        # Demo and testing
+├── Program.cs        # Demo
 ├── GenericSort.csproj
-├── GenericSort.sln
+GenericSort.Tests/
+└── SortingTests.cs
+generic-sorting.sln
 
 ```
 ---
@@ -22,7 +24,7 @@ GenericSort/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/generic-sorting.git
+git clone https://github.com/LazyCoder4542/generic-sorting.git
 cd generic-sorting
 ````
 
@@ -33,6 +35,44 @@ dotnet run --project GenericSort
 ```
 
 Ensure you have [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download) or later installed.
+
+Here’s a **Testing** section you can add to your `README.md`, formatted appropriately:
+
+---
+
+## 🧪 Testing
+
+This project uses **xUnit** for unit testing.
+
+### 🏁 Running Tests
+
+To run all tests from the root of the solution:
+
+```bash
+dotnet test
+```
+
+Make sure you've restored packages first:
+
+```bash
+dotnet restore
+```
+
+### 🧠 What’s Covered
+
+* ✅ **Correctness tests** for all implemented sorting algorithms (e.g. Quick Sort, Merge Sort, Counting Sort, Bucket Sort).
+* 🔁 **Stability tests** for sorting algorithms where applicable (e.g. Counting Sort, Radix Sort).
+* ⚠️ Both generic and non-generic algorithms are tested.
+
+### 📂 Test Project Structure
+
+Tests are located in the `GenericSort.Tests` project:
+
+This file includes:
+
+* Unit tests for sorting correctness
+* Stability verification using custom object arrays
+* Sample input/output assertions
 
 ---
 
